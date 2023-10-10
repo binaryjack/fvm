@@ -12,10 +12,30 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "colors": [
+      {
+        "id": "superstatus.error",
+        "description": "Color for error message in the status bar.",
+        "defaults": {
+          "dark": "errorForeground",
+          "light": "errorForeground",
+          "highContrast": "#010203",
+          "highContrastLight": "#feedc3"
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "language": "javascript"
+      },
+      {
+        "language": "javascriptreact"
+      }
+    ],
     "commands": [
       {
-        "command": "fvm.helloWorld",
-        "title": "Hello World"
+        "command": "fvm.highfive",
+        "title": "High Five"
       }
     ]
   },
